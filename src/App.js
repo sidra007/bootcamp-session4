@@ -1,19 +1,16 @@
 import React,{useState} from 'react';
-import './App.css';
-import Message from './Message.js';
+import './App.css'
 
 function App(){
-  let[ismorning,setmorning]=useState(false);
-  let[count,setcount]=useState(1);
+  let[morning,setmorning]=useState(false)
   return(
-  <div className = {`night ${ismorning ? `day`:``}`}>
-  <Message time = {ismorning ? 'day':'night'}/>
-  <h1>the value of counter is {count}</h1>
-  <button onClick={()=>setcount(count+1)}>
-    start
+<div className={`night ${morning ? `day`:`` }`}>
+  
+  <h1>the time is {morning? 'morning':'night'}</h1>
+  <button onClick={()=>setmorning(!morning)}>
+    time
   </button>
-  </div>
+</div>
   );
 }
-
 export default App;

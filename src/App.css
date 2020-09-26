@@ -1,8 +1,8 @@
 .night{
-height:500px; 
-background-color: blue;
+  height:500px;
+  background-color: lightskyblue;
 }
 
 .day{
-  background-color: orange;
+  background-color: yellow;
 }
